@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="8dp">
+    <ImageView
+        android:id="@+id/contact_image"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        app:srcCompat="@drawable/ic_person_black_24dp"
+        />
+    <TextView
+        style="?attr/contactNameStyle"
+        android:id="@+id/contact_name"
+        android:layout_toRightOf="@id/contact_image"
+        android:layout_alignTop="@id/contact_image"
+        android:layout_marginLeft="8dp"
+        android:text="Rajeev"
+        android:textSize="16sp"
+        />
+    <TextView
+        style="?attr/additionalTextStyle"
+        android:id="@+id/contact_phone_number"
+        android:layout_alignBottom="@id/contact_image"
+        android:layout_alignLeft="@id/contact_name"
+        android:text="8147913405"
+        android:textSize="12sp"
+        />
+</RelativeLayout>
